@@ -22,4 +22,4 @@ jobs:
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           catFact: ${{ steps.meow.outputs.fact }}
-          issueTitle: "a cat fact for you"
+          issueTitle: "another cat fact for you"

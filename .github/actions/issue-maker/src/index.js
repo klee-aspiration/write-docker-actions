@@ -10,8 +10,8 @@ async function run() {
     const octokit = new github.GitHub(token);
 
     const newIssue = await octokit.issues.create({
-      repo: octokit.context.repo.repo,
-      owner: octokit.context.repo.owner,
+      repo: github.context.repo.repo,
+      owner: github.context.repo.owner,
       title: issueTitle,
       body: catFact
     });
